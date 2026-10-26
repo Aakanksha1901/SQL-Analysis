@@ -1,7 +1,7 @@
 use delhiweather;
 select * from raw_weather_aqi;
 
--- Show temperature, humidity, and AQI for each location and hour.
+--Show temperature, humidity, and AQI for each location and hour.
 select a.location , a.time_ist , l.temp_c ,l.humidity , a.aqi_index
 from delhiweather_aqi a
 inner join delhi_weather_location l
